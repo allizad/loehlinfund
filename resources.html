@@ -8,18 +8,19 @@ layout: base
 <cover-l centered="div" minHeight="10vh">
   {% include nav.html %}
   <div class="stack">
-    <h1>Resources</h1>
+    <h1 class="text-align:center">Resources</h1>
   </div>
 </cover-l>
+<main>
+  <div class="padding:s1">
+    <div class="stack">
+      {% for resource in site.data.resources %}
+      <a href="{{ resource.link_url }}">
+        <h3>{{ resource.link_text }}</h3>
+      </a>
+      {% endfor %}
+    </div>
 
-<div class="padding:s1">
-  <div class="stack">
-    {% for resource in site.data.resources %}
-    <a href="{{ resource.link_url }}">
-      <h3>{{ resource.link_text }}</h3>
-    </a>
-    {% endfor %}
   </div>
-
-</div>
+</main>
 

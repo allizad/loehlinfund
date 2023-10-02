@@ -8,51 +8,53 @@ layout: base
 <cover-l centered="div" minHeight="10vh">
   {% include nav.html %}
   <div class="stack">
-    <h1>Event Details</h1>
+    <h1 class="text-align:center">Event Details</h1>
   </div>
 </cover-l>
-
-<article class="padding:s1 stack">
-  <div class="stack">
-    <p>
-      Please join the Loehlin and Goff families in celebrating James Loehlin’s life at Shakespeare at Winedale on Saturday, November 4th, from 11 AM - 4 PM, on James’ 59th birthday. Dress is casual.
-    </p>
-    <p>
-      Light snacks and refreshments will be provided. We encourage you to bring a picnic and beverages to enjoy on the grounds. There will be many ways to participate, connect, and celebrate during the day.
-    </p>
-    <p>
-      The Barn will be reserved as a space for contemplative and reflection.
-    </p>
-    <p>
-      Families with kids of all ages are encouraged to attend: there will be a kid’s tent with activities and sitters.
-    </p>
-  </div>
-
-  <div class="stack">
-    <h2>Schedule</h2>
+<main>
+  <article class="padding:s1 stack">
+    <div class="stack">
+      <p>
+        Please join the Loehlin and Goff families in celebrating James Loehlin’s life at Shakespeare at Winedale on Saturday, November 4th, from 11 AM - 4 PM, on James’ 59th birthday. Dress is casual.
+      </p>
+      <p>
+        Light snacks and refreshments will be provided. We encourage you to bring a picnic and beverages to enjoy on the grounds. There will be many ways to participate, connect, and celebrate during the day.
+      </p>
+      <p>
+        The Barn will be reserved as a space for contemplative and reflection.
+      </p>
+      <p>
+        Families with kids of all ages are encouraged to attend: there will be a kid’s tent with activities and sitters.
+      </p>
+    </div>
 
     <div class="stack">
+      <h2>Schedule</h2>
 
-      {% for block in site.data.schedule_blocks %}
-      <div class="cluster">
-        <div>
-          <h3 class="text-align:right">{{ block.time }}</h3>
-          <div class="stack stack-sm">
-            <p>{{ block.title }}</p>
-            <small>{{ block.description }}</small>
+      <div class="stack">
+
+        {% for block in site.data.schedule_blocks %}
+        <div class="cluster">
+          <div>
+            <h3 class="text-align:right">{{ block.time }}</h3>
+            <div class="stack stack-sm">
+              <p>{{ block.title }}</p>
+              <small>{{ block.description }}</small>
+            </div>
           </div>
         </div>
+        {% endfor %}
+
       </div>
-      {% endfor %}
 
     </div>
 
-  </div>
+    <div class="stack">
+      <h2>Map</h2>
+      <img src="assets/images/sebastian-herrmann-unsplash.jpg" alt="Sebastian Herrmann Unsplash">
+    </div>
 
-  <div class="stack">
-    <h2>Map</h2>
-    <img src="assets/images/sebastian-herrmann-unsplash.jpg" alt="Sebastian Herrmann Unsplash">
-  </div>
+  </article>
 
-</article>
+</main>
 

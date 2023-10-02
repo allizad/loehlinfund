@@ -13,6 +13,7 @@
 @import "utilities.css";
 
 main {
-  display: block;
-  margin: var(--s0);
+  max-width: var(--measure);
+  margin-left: auto;
+  margin-right: auto;
 }
