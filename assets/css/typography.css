@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Equity Text A";
   src: url("https://db.onlinewebfonts.com/t/4d01e3c8eddeee96262bed5288a6aa64.eot");
   src: url("https://db.onlinewebfonts.com/t/4d01e3c8eddeee96262bed5288a6aa64.eot?#iefix")format("embedded-opentype"),
@@ -6,6 +6,16 @@
   url("https://db.onlinewebfonts.com/t/4d01e3c8eddeee96262bed5288a6aa64.woff")format("woff"),
   url("https://db.onlinewebfonts.com/t/4d01e3c8eddeee96262bed5288a6aa64.ttf")format("truetype"),
   url("https://db.onlinewebfonts.com/t/4d01e3c8eddeee96262bed5288a6aa64.svg#Equity Text A")format("svg");
+} */
+
+@font-face {
+  font-family: "Equity Text A";
+  src: url("../fonts/equity/web_fonts/4d01e3c8eddeee96262bed5288a6aa64.eot");
+  src: url("../fonts/equity/web_fonts/4d01e3c8eddeee96262bed5288a6aa64.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/equity/web_fonts/4d01e3c8eddeee96262bed5288a6aa64.woff2")format("woff2"),
+  url("../fonts/equity/web_fonts/4d01e3c8eddeee96262bed5288a6aa64.woff")format("woff"),
+  url("../fonts/equity/web_fonts/4d01e3c8eddeee96262bed5288a6aa64.ttf")format("truetype"),
+  url("../fonts/equity/web_fonts/4d01e3c8eddeee96262bed5288a6aa64.svg#Equity Text A")format("svg");
 }
 
 /*
@@ -35,7 +45,7 @@
 
 a {
   color: var(--link-color);
-  text-decoration: none;
+  /* text-decoration: none; */
   text-underline-position: under;
 }
 
@@ -105,4 +115,8 @@ dt {
 
 pre {
   margin: 0;
+}
+
+article p {
+  max-width: var(--measure);
 }

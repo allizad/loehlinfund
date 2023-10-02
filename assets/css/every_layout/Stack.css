@@ -38,9 +38,10 @@ Stack
 }
 
 /* common smaller stack */
-.stack.stack-sm > * + * { --stack-space: var(--s-1) }
+.stack.stack-sm > * + * { --stack-space: var(--s-3) }
 
 .stack._space\:s-1  > * + * { --stack-space: var(--s-1) }
 .stack._space\:s0 > * + * { --stack-space: var(--s0) }
 .stack._space\:s1 > * + * { --stack-space: var(--s1) }
 .stack._space\:s2 > * + * { --stack-space: var(--s2) }
+.stack._space\:s3 > * + * { --stack-space: var(--s3) }

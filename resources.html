@@ -14,7 +14,11 @@ layout: base
 
 <div class="padding:s1">
   <div class="stack">
-    hello
+    {% for resource in site.data.resources %}
+    <a href="{{ resource.link_url }}">
+      <h3>{{ resource.link_text }}</h3>
+    </a>
+    {% endfor %}
   </div>
 
 </div>
