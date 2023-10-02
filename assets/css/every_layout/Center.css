@@ -1,0 +1,31 @@
+/*
+
+Center
+
+@description
+  A component that creates a horizontally centered column
+
+@reference
+  - https://every-layout.dev/layouts/center/
+
+@example
+  ```
+    <center-l>
+      <div class="stack">
+        <!-- Any flow content here (headings, paragraphs, etc) -->
+      </div>
+    </center-l>
+  ```
+
+@variants
+  No present variants
+
+*/
+
+center-l {
+  display: block;
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--measure);
+}

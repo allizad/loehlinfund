@@ -1,0 +1,22 @@
+box-l {
+  --background: var(--background-color);
+  --box-shadow: 0 var(--s-3) var(--s0) 0 rgb(0 0 0 / 16%);
+  --box-radius: var(--border-radius);
+
+  display: block;
+  padding: var(--s0);
+  outline: var(--border-thin) solid transparent;
+  outline-offset: calc(var(--border-thin) * -1);
+
+  box-shadow: var(--box-shadow);
+  border-radius: var(--box-radius);
+  background: var(--background);
+}
+
+box-l._box-shadow\:none {
+  --box-shadow: none;
+}
+
+box-l._border-radius\:0 {
+  --box-radius: 0;
+}

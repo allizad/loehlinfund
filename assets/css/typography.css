@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Equity Text A";
+  src: url("https://db.onlinewebfonts.com/t/4d01e3c8eddeee96262bed5288a6aa64.eot");
+  src: url("https://db.onlinewebfonts.com/t/4d01e3c8eddeee96262bed5288a6aa64.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/4d01e3c8eddeee96262bed5288a6aa64.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/4d01e3c8eddeee96262bed5288a6aa64.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/4d01e3c8eddeee96262bed5288a6aa64.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/4d01e3c8eddeee96262bed5288a6aa64.svg#Equity Text A")format("svg");
+}
+
+/*
+  FONTS & type
+*/
+
+:root {
+  --font-body: "Equity Text A", serif;
+  --font-mono: Menlo, Courier, Courier New, Andale Mono, monospace;
+  --font-weight: 400;
+  --font-color: var(--color-dark);
+  --line-height: var(--ratio);
+  --font-size: calc(.333vw + 1em);
+  --font-size-sm: calc(.15vw + 1em);
+  --font-size-lg: calc(.5vw + 1em);
+  --icon-size: 1rem;
+  --link-color: var(--color-bright);
+  --letter-spacing: 0.03ch;
+
+  line-height: var(--s0);
+  font-size: var(--font-size);
+  font-family: var(--font-body);
+  color: var(--font-color);
+  font-weight: var(--font-weight);
+}
+
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  text-underline-position: under;
+}
+
+article a {
+  text-decoration: underline;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+  margin: unset;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: inherit;
+  font-weight: 600;
+  letter-spacing: 0.03ch;
+  line-height: var(--line-height);
+  margin: unset;
+}
+
+ul,
+menu {
+  padding: unset;
+  margin: unset;
+}
+
+li > ul {
+  padding-left: var(--s0);
+}
+
+ul.unstyled {
+  list-style: none;
+}
+
+i {
+  color: var(--color-muted);
+}
+
+hr {
+  height: var(--border-thin);
+  background: var(--color-lightish);
+  border: none;
+  margin: inherit;
+}
+
+dd {
+  margin-inline-start: 0;
+}
+
+dt {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-darkish);
+  font-feature-settings: "c2sc";
+  font-variant: small-caps;
+  letter-spacing: calc(var(--s-7)/2);
+  font-size: .74074rem;
+}
+
+pre {
+  margin: 0;
+}

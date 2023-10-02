@@ -1,0 +1,46 @@
+/*
+
+Stack
+
+@description
+  The stack is a top-level layout class, which establishes a nice
+  vertical rhythm based on our variable --var scale (defined
+  in settings.css).
+
+@reference
+  - https://every-layout.dev/layouts/stack/
+
+@note
+  In general, we may want to eventually use the attr() css function
+  when it's out of its experiemental phase to help with
+  layout-specific utility classes, like "_space:s0".
+  See https://developer.mozilla.org/en-US/docs/Web/CSS/attr
+
+@variants
+  .stack-sm - a specific variant for a slightly smaller spacing since it is so widely used. This one is more commonly used aroud form-groups, or to establish a closer relationship with subheaders and content that are already inside a parent stack.
+
+  ._space:s-1 - smallest vertical spacing. Can also just use "stack-sm" with "stack"
+  ._space:s0
+  ._space:s1
+  ._space:s2 - largest vertical spacing
+*/
+
+.stack {
+  --stack-space: var(--s1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * + * {
+  margin-top: var(--stack-space);
+}
+
+/* common smaller stack */
+.stack.stack-sm > * + * { --stack-space: var(--s-1) }
+
+.stack._space\:s-1  > * + * { --stack-space: var(--s-1) }
+.stack._space\:s0 > * + * { --stack-space: var(--s0) }
+.stack._space\:s1 > * + * { --stack-space: var(--s1) }
+.stack._space\:s2 > * + * { --stack-space: var(--s2) }

@@ -1,0 +1,101 @@
+/*
+
+Cluster
+
+@description
+  The cluster is a top-level layout class that spatially groups a small amounth of elements in a consistent way no matter if they are stacked vertically or horizontally. It's kind of like treating the children elements as inline-like elements with specific spacing rules.
+
+@reference
+  - https://every-layout.dev/layouts/cluster/
+
+@note
+  Apologies in advance for any namespace confusion. Calling it a cluster wasn't intended to mix folks up when it comes to _search clusters_. The important part of using this word is that clustering information in the UI means that these elements are _related_ to one another and should be logically grouped. Thus..."cluster".
+
+@example
+  ```
+    <div class="cluster">
+      <div><!-- very necessary spacer div between the main wrapper and the children -->
+        <div><!-- child element --></div>
+        <div><!-- child element --></div>
+      </div>
+    </div>
+  ```
+
+@variants
+  The Cluster has many utility classes, because it can be used in many different compositions. Indeed, it is one of the most used layouts besides the stack.
+
+  ._justify:left - left-aligns the items like text
+  ._justify:center - centers items within the container of the cluster
+  ._justify:flex-end - right-alignment
+  ._justify:space-between - pushed the children elements to take  up all available space and distribute themselves evenly. Nice for headers and navs.
+
+  ._space:0 - Leaves no gap between elements. Seldom used.
+  ._space:s1 - A bit larger spacing. See settings.css for all of our spacing variables.
+  # etc
+
+  ._align:baseline - bottom aligns elements
+  ._align:center - horizontally aligns the elements
+
+  ._wrap:no-wrap - keeps child elements in one line, never forming a "word" break
+*/
+
+.cluster {
+  --cluster-display: flex;
+  --cluster-flex-wrap: wrap;
+  --cluster-justify-content: flex-start;
+  --cluster-align-items: flex-start;
+  --cluster-space: var(--s1);
+}
+
+.cluster > * {
+  display: var(--cluster-display);
+  flex-wrap: var(--cluster-flex-wrap);
+  justify-content: var(--cluster-justify-content);
+  align-items: var(--cluster-align-items);
+  margin: calc(var(--cluster-space) / 2 * -1);
+}
+
+.cluster > * > * {
+  margin: calc(var(--cluster-space) / 2);
+}
+
+.cluster._justify\:flex-end {
+  --cluster-justify-content: flex-end;
+}
+.cluster._justify\:left {
+  --cluster-justify-content: left;
+}
+.cluster._justify\:space-between {
+  --cluster-justify-content: space-between;
+}
+.cluster._justify\:center {
+  --cluster-justify-content: center;
+}
+
+.cluster._space\:s-4 {
+  --cluster-space: var(--s-4);
+}
+.cluster._space\:s-3 {
+  --cluster-space: var(--s-3);
+}
+.cluster._space\:s-2 {
+  --cluster-space: var(--s-2);
+}
+.cluster._space\:s-1 {
+  --cluster-space: var(--s-1);
+}
+.cluster._space\:0 {
+  --cluster-space: 0;
+}
+
+
+.cluster._align\:baseline {
+  --cluster-align-items: baseline;
+}
+.cluster._align\:center {
+  --cluster-align-items: center;
+}
+
+.cluster._wrap\:no-wrap {
+  --cluster-flex-wrap: nowrap;
+}

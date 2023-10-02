@@ -1,0 +1,19 @@
+/*
+
+@title Cover
+
+@example
+  ```
+    <div class="cover _height:100pct">
+      <p class="centered text-align:center">No Judgements</p>
+    </div>
+  ```
+
+*/
+
+cover-l {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 100vh;
+  padding: var(--s1);
+}
