@@ -2,11 +2,12 @@
 @import "settings.css";
 @import "typography.css";
 
-@import "every_layout/box.css";
-@import "every_layout/center.css";
-@import "every_layout/cluster.css";
-@import "every_layout/cover.css";
-@import "every_layout/stack.css";
+@import "every_layout/Box.css";
+@import "every_layout/Center.css";
+@import "every_layout/Cluster.css";
+@import "every_layout/Cover.css";
+@import "every_layout/Stack.css";
+@import "every_layout/Switcher.css";
 
 @import "elements/buttons.css";
 

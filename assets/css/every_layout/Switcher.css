@@ -1,0 +1,30 @@
+/*
+
+Switcher
+
+@description
+  The switcher is a top-level layout class that takes a set of child elements and intrinsically lays them out vertically or horizontally depending on device width. To do this, it "switches a Flexbox context between a horizontal and a vertical layout at a given, container-based breakpoint. That is, if the breakpoint is 30rem, the layout will switch to a vertical configuration when the parent element is less than 30rem wide."
+
+@reference
+  - https://every-layout.dev/layouts/switcher/
+
+@example
+  ```
+    <switcher-l class="switcher">
+      <div><!-- child element --></div>
+      <div><!-- another child element --></div>
+      <div><!-- etc --></div>
+    </switcher-l>
+  ```
+*/
+
+switcher-l {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+switcher-l > * {
+  /* flex-basis: calc((var(--measure) - 100%) * 999); */
+  flex-grow: 1;
+  flex-basis: 10rem;
+}

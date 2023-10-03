@@ -34,10 +34,13 @@ Stack
 }
 
 .stack > * + * {
-  margin-top: var(--stack-space);
+  margin-top: var(--stack-space) !important;
 }
 
 /* common smaller stack */
+.stack.stack-sm {
+  --stack-space: var(--s-3)
+}
 .stack.stack-sm > * + * { --stack-space: var(--s-3) }
 
 .stack._space\:s-1  > * + * { --stack-space: var(--s-1) }

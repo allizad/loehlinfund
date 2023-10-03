@@ -53,6 +53,11 @@ article a {
   text-decoration: underline;
 }
 
+article p > a {
+  font-variant: small-caps;
+  letter-spacing: calc(0.05 * var(--s0));
+}
+
 a.button {
   text-decoration: none;
 }
