@@ -33,6 +33,7 @@
   --font-size-lg: calc(.5vw + 1em);
   --icon-size: 1rem;
   --link-color: var(--color-brand);
+  --link-color-hover: var(--color-primary-dark);
   --letter-spacing: 0.03ch;
 
   line-height: var(--s0);
@@ -47,6 +48,10 @@ a {
   color: var(--link-color);
   /* text-decoration: none; */
   text-underline-position: under;
+}
+a:hover {
+  color: var(--link-color-hover);
+  transition: all 0.2s cubic-bezier(1, 0, 0, 1);
 }
 
 article a {

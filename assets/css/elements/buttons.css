@@ -39,7 +39,7 @@ input[type="file"] {
   /* CSS Variable Settings */
   --button-background-color: var(--color-white);
   --button-color: var(--color-primary);
-  --button-background-hover-color: var(--color-light);
+  --button-background-hover-color: var(--color-primary-light);
 
   background: var(--button-background-color);
   border: var(--border-sm) solid var(--button-color);
@@ -68,6 +68,7 @@ button:hover,
 .button:hover,
 input[type="submit"]:hover {
   background: var(--button-background-hover-color);
+  transition: all 0.2s cubic-bezier(1, 0, 0, 1);
 }
 
 button.primary,
@@ -75,6 +76,9 @@ button.primary,
   --button-background-color: var(--color-primary);
   --button-color: var(--color-light);
   --button-background-hover-color: var(--color-primary-dark);
+}
+a.button:hover {
+  color: var(--button-color);
 }
 
 button.secondary,

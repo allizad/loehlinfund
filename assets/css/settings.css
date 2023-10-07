@@ -119,7 +119,8 @@
   */
 
   --color-primary: var(--color-brand);
-  --color-primary-dark: #2080a3;
+  --color-primary-dark: #996510;
+  --color-primary-light: #fffaf1;
   --color-secondary: var(--color-light-blue);
 
   --color-info: var(--color-blue);
