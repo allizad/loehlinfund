@@ -120,6 +120,7 @@
 
   --color-primary: var(--color-brand);
   --color-primary-dark: #996510;
+  --color-primary-mid: #b87b184f;
   --color-primary-light: #fffaf1;
   --color-secondary: var(--color-light-blue);
 
