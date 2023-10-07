@@ -95,7 +95,7 @@
     The colors of "bonsai" as a brand. For use in logos and sections
     where we want to reinforce a sense of who we are.
   */
-  --color-brand: #68bd90;
+  --color-brand: #b87b18;
   --color-brand-secondary: #317d4f;
   --color-brand-dark: #204345;
   --color-brand-light: #e4f3ea;
@@ -118,7 +118,7 @@
     }
   */
 
-  --color-primary: var(--color-bright);
+  --color-primary: var(--color-brand);
   --color-primary-dark: #2080a3;
   --color-secondary: var(--color-light-blue);
 

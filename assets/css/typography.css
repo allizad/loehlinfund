@@ -32,7 +32,7 @@
   --font-size-sm: calc(.15vw + 1em);
   --font-size-lg: calc(.5vw + 1em);
   --icon-size: 1rem;
-  --link-color: var(--color-bright);
+  --link-color: var(--color-brand);
   --letter-spacing: 0.03ch;
 
   line-height: var(--s0);
@@ -85,7 +85,7 @@ menu {
   margin: unset;
 }
 
-li > ul {
+ul {
   padding-left: var(--s0);
 }
 
