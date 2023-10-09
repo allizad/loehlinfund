@@ -18,3 +18,12 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
+
+#barn {
+  min-height: 3rem;
+}
+
+#barn:hover {
+  fill: var(--color-primary);
+  transition: all 0.2s cubic-bezier(1, 0, 0, 1);
+}

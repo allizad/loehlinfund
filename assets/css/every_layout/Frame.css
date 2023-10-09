@@ -1,0 +1,54 @@
+/*
+
+Frame
+
+@description
+  A component that gives an asset (most commonly an img) a set aspect ratio without hard-coding the width and height.
+
+@reference
+  - https://every-layout.dev/layouts/frame/
+
+@example
+  ```
+    <frame-l ratio="4:3">
+      <img src="/path/to/image" alt="description of the image here" />
+    </frame-l>
+  ```
+
+@variants
+  No present variants
+
+  w/o javascript, could do something like this:
+    .frame {
+    --n: 16;
+    --d: 9;
+    aspect-ratio: var(--n) / var(--d);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .frame > img,
+  .frame > video {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+*/
+
+frame-l {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+frame-l > img,
+frame-l > video {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,21 @@
+/*
+
+Icon
+
+@description
+  Keeps an SVG element in line with text
+
+@reference
+  - https://every-layout.dev/layouts/icon/
+
+@example
+  ```
+    <button>
+      <icon-l space="0.5em" label="Close" role="img" aria-label="Close">
+        <svg>
+          <use href="/path/to/icons.svg#cross"></use>
+        </svg>
+      </icon-l>
+    </button>
+  ```
+*/
