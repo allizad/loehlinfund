@@ -33,3 +33,9 @@ main {
 .circle {
   border-radius: 50%;
 }
+
+@media screen and (max-width: 40rem) {
+  .cluster > div {
+    justify-content: center;
+  }
+}
