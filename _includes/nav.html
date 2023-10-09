@@ -6,10 +6,10 @@
     </a>
     <div class="cluster">
       <div>
-        <a href="/event">Event Details</a>
-        <a href="/participate">Participate</a>
-        <a href="/resources">Resources</a>
-        <a href="/donate">Donate</a>
+        <a href="/event" {% if page.slug == "event" %} class="active" {% endif %} >Event Details</a>
+        <a href="/participate" {% if page.slug == "participate" %} class="active" {% endif %} >Participate</a>
+        <a href="/resources" {% if page.slug == "resources" %} class="active" {% endif %} >Resources</a>
+        <a href="/donate" {% if page.slug == "donate" %} class="active" {% endif %} >Donate</a>
       </div>
     </div>
     <a href="{{site.event_link}}" target="_blank" class="button _size:sm">RSVP</a>
