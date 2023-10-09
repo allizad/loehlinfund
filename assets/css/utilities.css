@@ -69,7 +69,7 @@
 .hover-target { opacity: 0;  transition: opacity 0.2s; }
 
 /* Padding */
-.padding\:0   { padding: 0 }
+.padding\:0   { padding: 0 !important }
 .padding\:s-1 { padding: var(--s-1) }
 .padding\:s-5 { padding: var(--s-5) }
 .padding\:s0  { padding: var(--s0) }
