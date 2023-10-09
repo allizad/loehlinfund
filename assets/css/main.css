@@ -8,6 +8,8 @@
 @import "every_layout/Cover.css";
 @import "every_layout/Stack.css";
 @import "every_layout/Switcher.css";
+@import "every_layout/Icon.css";
+@import "every_layout/Fram.css";
 
 @import "elements/buttons.css";
 
@@ -26,4 +28,8 @@ main {
 #barn:hover {
   fill: var(--color-primary);
   transition: all 0.2s cubic-bezier(1, 0, 0, 1);
+}
+
+.circle {
+  border-radius: 50%;
 }

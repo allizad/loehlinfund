@@ -10,12 +10,28 @@ Icon
 
 @example
   ```
-    <button>
-      <icon-l space="0.5em" label="Close" role="img" aria-label="Close">
-        <svg>
-          <use href="/path/to/icons.svg#cross"></use>
-        </svg>
-      </icon-l>
-    </button>
+    <icon-l class="_align:center">
+      <i class="flag-icon flag-icon-us margin-right:s-2"></i>
+      <h4>
+        <%= space.path_fragment %>
+      </h4>
+    </icon-l>
   ```
 */
+icon-l {
+  --align: baseline;
+  align-items: var(--align);
+}
+
+icon-l svg, icon-l img, icon-l i {
+  --size: 0.75em;
+
+  height: var(--size);
+  height: 1cap;
+  width: var(--size);
+  width: 1cap;
+}
+
+icon-l._align\:center {
+  --align: center;
+}
