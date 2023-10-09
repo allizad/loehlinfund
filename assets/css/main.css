@@ -43,3 +43,7 @@ main {
 body {
   background-color: #b87b180f
 }
+
+img {
+  max-width: 100%;
+}
