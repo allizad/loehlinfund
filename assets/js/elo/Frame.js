@@ -10,7 +10,7 @@ export default class Frame extends HTMLElement {
   constructor() {
     super();
     this.render = () => {
-      if (!this.children.length < 1) {
+      if (this.children.length != 1) {
         // eslint-disable-next-line no-console
         console.warn("<frame-l> elements should have just one child element");
       }
@@ -21,6 +21,7 @@ export default class Frame extends HTMLElement {
         document.head.innerHTML += `
         <style id="${this.i}">
           [data-i="${this.i}"] {
+            aspect-ratio: ${ratio[0]} / ${ratio[1]};
             padding-bottom: calc(${ratio[0]} / ${ratio[1]} * 100%);
           }
         </style>
