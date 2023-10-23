@@ -26,9 +26,9 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://jamesbirthdaypicnic.org" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  allizad
 event_link: https://www.eventbrite.com/e/james-birthday-and-memorial-picnic-tickets-732988477267
+donation_link: https://give.utexas.edu/?menu=OGPLASH&solicit=JLS&recog=memorial&recogname=James%20Loehlin&comments=James%20Loehlin%2C%20Ph.D.%20Memorial
 
 # Build settings
-# theme: minima
 plugins:
   - jekyll-feed
 
