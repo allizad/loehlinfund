@@ -148,3 +148,10 @@ blockquote::before {
 address {
   font-style: normal;
 }
+
+p a {
+  line-height: 1.75
+}
+ul p a {
+  line-height: 1.5;
+}

@@ -21,9 +21,16 @@ description: Important links and information for the memorial for James Loehlin.
   <article class="padding:s1 padding-top:0">
     <div class="stack">
       {% for resource in site.data.resources %}
-      <a href="{{ resource.link_url }}" target="_blank">
-        <h3>{{ resource.link_text }}</h3>
-      </a>
+      <div class="stack stack-sm _space:s-1">
+        <h3>
+          <a href="{{ resource.link_url }}" target="_blank">
+            {{ resource.link_text }}
+          </a>
+        </h3>
+        {% if resource.description %}
+        <p>{{ resource.description }}</p>
+        {% endif %}
+      </div>
       {% endfor %}
     </div>
   </article>
