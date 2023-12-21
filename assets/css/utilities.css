@@ -9,10 +9,12 @@
 .color\:warning-dark { color: var(--color-warning-dark) }
 .color\:transparent  { color: transparent }
 .color\:orange       { color: var(--color-orange) }
+.color\:light        { color: var(--color-primary-light) }
 
 /* Backgrounds - Utility */
 .bg\:dark        { background-color: var(--color-dark) }
 .bg\:light       { background-color: var(--color-light) }
+.bg\:grey       { background-color: var(--color-grey) }
 .bg\:muted       { background-color: var(--color-muted) }
 .bg\:bright      { background-color: var(--color-bright) }
 .bg\:success     { background-color: var(--color-success) }
@@ -74,6 +76,8 @@
 .padding\:s-5 { padding: var(--s-5) }
 .padding\:s0  { padding: var(--s0) }
 .padding\:s1  { padding: var(--s1) }
+.padding\:s2  { padding: var(--s2) }
+.padding\:s3  { padding: var(--s3) }
 .padding-top\:0 { padding-top: 0 !important } /* shouldn't have to do a ! here - fix this */
 .padding-left\:s0 { padding-left: var(--s0)}
 .padding-left\:0  { padding-left: 0}

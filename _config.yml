@@ -19,14 +19,13 @@
 # in the templates via {{ site.myvariable }}.
 
 title: James' Birthday Picnic and Memorial
-email:  shakespeare@austin.utexas.edu
+email:  info@loehlinfund.org
 description: >- # this means to ignore newlines until "baseurl:"
-  James’ Birthday Picnic and Memorial is a celebration of James’ life and a chance for friends, family, and students to gather and share memories. We will be celebrating on Nov 4, 2023 at Winedale.
+  The James N. Loehlin Memorial Fund is a non-profit organization dedicated to supporting the arts and humanities in Austin, Texas.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://jamesbirthdaypicnic.org" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://loehlinfund.org" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  allizad
-event_link: https://www.eventbrite.com/e/james-birthday-and-memorial-picnic-tickets-732988477267
-donation_link: https://give.utexas.edu/?menu=OGPLASH&solicit=JLS&recog=memorial&recogname=James%20Loehlin&comments=James%20Loehlin%2C%20Ph.D.%20Memorial
+donation_link: https://austincf.fcsuite.com/erp/donate/create/fund?funit_id=9976
 
 # Build settings
 plugins:

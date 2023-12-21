@@ -32,8 +32,8 @@
   --font-size-sm: calc(.15vw + 1em);
   --font-size-lg: calc(.5vw + 1em);
   --icon-size: 1rem;
-  --link-color: var(--color-brand);
-  --link-color-hover: var(--color-primary-dark);
+  --link-color: var(--color-red);
+  --link-color-hover: var(--color-red-dark);
   --letter-spacing: 0.03ch;
 
   line-height: var(--s0);
@@ -43,6 +43,18 @@
   font-weight: var(--font-weight);
 }
 
+/*
+  Colors
+*/
+
+:root {
+  --color-white: #fff;
+  --color-white-200: #E2D7D7;
+  --color-grey: #D9D9D9;
+  --color-dark: #210303;
+  --color-red: #FF6060;
+  --color-red-dark: #f83737;
+}
 
 a {
   color: var(--link-color);
@@ -69,7 +81,7 @@ a.button {
 }
 
 a.active {
-  color: var(--color-primary-darkest);
+  color: var(--color-red);
 }
 
 p {
@@ -101,15 +113,16 @@ ul {
 
 ul.unstyled {
   list-style: none;
+  padding: unset;
 }
 
 i {
-  color: var(--color-muted);
+  color: var(--color-grey);
 }
 
 hr {
   height: var(--border-thin);
-  background: var(--color-lightish);
+  background: var(--color-grey);
   border: none;
   margin: inherit;
 }
@@ -137,7 +150,7 @@ article p {
 }
 
 blockquote::before {
-  color: var(--color-primary-mid);
+  color: var(--color-red);
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;

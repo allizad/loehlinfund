@@ -1,17 +1,16 @@
 <nav class="cluster _justify:space-between _align:center">
   <div>
     <a href="/">
-      {% include barn.html %}
+      {% include rose.html %}
       <!-- <img src="/assets/images/barn-outline.svg" alt="Logo" class="logo"> -->
     </a>
     <div class="cluster">
       <div>
-        <a href="/event" {% if page.slug == "event" %} class="active" {% endif %} >Event Details</a>
-        <a href="/participate" {% if page.slug == "participate" %} class="active" {% endif %} >Participate</a>
-        <a href="/resources" {% if page.slug == "resources" %} class="active" {% endif %} >Resources</a>
-        <a href="/donate" {% if page.slug == "donate" %} class="active" {% endif %} >Donate</a>
+        <a href="/" {% if page.slug == "home" %} class="active" {% endif %}>Home</a>
+        <a href="/about" {% if page.slug == "about" %} class="active" {% endif %}>About</a>
+        <a href="/resources" {% if page.slug == "resources" %} class="active" {% endif %}>Resources</a>
       </div>
     </div>
-    <a href="{{site.event_link}}" target="_blank" class="button primary _size:sm">RSVP</a>
+    <a href="{{site.donation_link}}" target="_blank" class="button primary _size:sm">Donate</a>
   </div>
 </nav>

@@ -7,32 +7,32 @@ slug: resources
 title: Resources | James Loehlin Birthday Picnic and Memorial
 description: Important links and information for the memorial for James Loehlin.
 ---
-
-<cover-l centered="div" minHeight="10vh">
-  {% include nav.html %}
-  <center-l>
-    <img src="/assets/images/folio/upon-the-lines.svg" class="margin:0" style="min-height: 7rem;width: 100%; max-width: 65ch;" alt="">
-  </center-l>
-  <div class="stack">
-    <h1 class="text-align:center">Resources</h1>
-  </div>
-</cover-l>
-<main>
-  <article class="padding:s1 padding-top:0">
+<div class="bg:dark color:light height:100pct">
+  <cover-l centered="div" minHeight="10vh">
+    {% include nav.html %}
+    <center-l>
+      <img src="/assets/images/folio/upon-the-lines.svg" class="margin:0" style="min-height: 7rem;width: 100%; max-width: 65ch;" alt="">
+    </center-l>
     <div class="stack">
-      {% for resource in site.data.resources %}
-      <div class="stack stack-sm _space:s-1">
-        <h3>
-          <a href="{{ resource.link_url }}" target="_blank">
-            {{ resource.link_text }}
-          </a>
-        </h3>
-        {% if resource.description %}
-        <p>{{ resource.description }}</p>
-        {% endif %}
-      </div>
-      {% endfor %}
+      <h1 class="text-align:center">Resources</h1>
     </div>
-  </article>
-</main>
-
+  </cover-l>
+  <main>
+    <article class="padding:s1 padding-top:0">
+      <div class="stack">
+        {% for resource in site.data.resources %}
+        <div class="stack stack-sm _space:s-1">
+          <h3>
+            <a href="{{ resource.link_url }}" target="_blank">
+              {{ resource.link_text }}
+            </a>
+          </h3>
+          {% if resource.description %}
+          <p>{{ resource.description }}</p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </article>
+  </main>
+</div>

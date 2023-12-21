@@ -4,38 +4,68 @@
 
 layout: base
 slug: home
-title: Home | James Loehlin Birthday Picnic and Memorial
+title: Home | James N Loehlin Memorial Fund
 ---
-
-<cover-l centered="center-l" minHeight="88vh">
-  {% include nav.html %}
-  <center-l class="stack" andText>
-    <img style="min-height: 5rem;width: 100%;" src="/assets/images/folio/variety-of-readers.svg" alt="">
-    <div class="stack">
-      <h1>James’ Birthday Picnic & Memorial</h1>
-      <div class="text-align:center">
-        <img src="/assets/images/james-ut-cropped.jpg" alt="James Loehlin" class="circle" style="width: 12rem; height: auto">
-      </div>
-      <article class="stack _space:s-2">
-        <!-- <h1>James’ Birthday Picnic & Memorial</h1> -->
+<div class="stack">
+  <cover-l class="bg:dark color:light" centered="center-l" minHeight="88vh">
+    {% include nav.html %}
+    <center-l class="stack">
+      <!-- <img style="min-height: 5rem;width: 100%;" src="/assets/images/folio/variety-of-readers.svg" alt=""> -->
+      <h1 class="text-align:center">James N. Loehlin Memorial Fund</h1>
+      <article class="stack">
         <p>
-          Saturday, November 4th, 11AM - 4PM
+          The James N. Loehlin fund was establish to assist students pursuing higher education and the arts, particularly those focused on Shakespeare and Early Modern drama.
+          <a href="/about">read more</a>
         </p>
-        <a href="https://maps.app.goo.gl/RctJNNbuR2nek3G1A" target="_blank" class="decoration:none">
-          <icon-l>
-            <svg>
-              <use xlink:href="/assets/images/location-dot-regular.svg#pin"></use>
-            </svg>
-            WINEDALE
-          </icon-l>
-        </a>
+        <div class="stack stack-sm">
+          <h2>16 Days to match $100,000</h2>
+          <p>
+            Give before Dec 31st, 2023, and your donation will be matched up to $100,000
+          </p>
+        </div>
+        <div class="stack stack-sm">
+          <h3>
+            <b>$34,116</b> <small>of $100,000 goal raised</small>
+          </h3>
+          <progress class="progress"
+            max="100000"
+            value="34116">
+          </progress>
+        </div>
       </article>
-    </div>
-    <div class="cluster _justify:center _align:center">
-      <div>
-        <a href="{{ site.event_link }}" target="_blank" class="button primary">RSVP</a>
-        <a href="/event">Event Details</a>
+      <div class="cluster _justify:center _align:center">
+        <div>
+          <a href="{{ site.donation_link}}" target="_blank" class="button primary">GIVE TODAY</a>
+        </div>
       </div>
-    </div>
-  </center-l>
-</cover-l>
+    </center-l>
+  </cover-l>
+  <section class="padding:s0">
+    <center-l>
+      <div class="padding:s-1"></div>
+      <article class="stack">
+        <h2>Board Members</h2>
+        <ul class="unstyled stack">
+          <li>Laurel Loehlin</li>
+          <li>Kevin Haynes</li>
+          <li>Sarah Bayne Elbert</li>
+          <li>Joseph Birkofer</li>
+        </ul>
+      </article>
+      <div class="padding:s-1"></div>
+    </center-l>
+  </section>
+  <section class="bg:grey padding:s0">
+    <div class="padding:s-1"></div>
+    <center-l>
+      <article class="stack">
+        <h2>Contact</h2>
+        <ul class="unstyled stack stack">
+          <li><a href="mailto:info@loehlinfund.org">info@loehlinfund.org</a></li>
+          <li><a href="https://www.instagram.com/loehlinfund" target="_blank">@loehlinfund</a></li>
+        </ul>
+      </article>
+    </center-l>
+    <div class="padding:s2"></div>
+  </section>
+</div>

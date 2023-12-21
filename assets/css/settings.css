@@ -66,28 +66,13 @@
 
     Our base palette we work with.
   */
-  --color-dark: #454d5d;
-  --color-darkish: #5a6269;
-  --color-lightish: #e8ebee;
-  --color-light: #f5f8fa;
-  --color-lightest: #fff;
-  --color-mid: hsl(0, 0%, 50%);
-  --color-blue: #259ac4;
-  --color-bright: #1aade2;
-  --color-light-blue: #e8f7fe;
-  --color-green: #59b27d;
-  --color-green-bright: #4bc27d;
-  --color-green-bright-dark: hsl(145, 45%, 49%);
-  --color-indigo: #244260;
-  --color-grey: #939da8;
-  --color-light-grey: #caced7;
-  --color-red: #ec2c4c;
-  --color-orange: #eb6a39;
-  --color-yellow: #ebcd39;
-  --color-lime: #bac24b;
-
-  --color-purple-bright: #787df7;
-  --color-purple: #6563f5;
+  --color-white: #fff;
+  --color-white-200: #E2D7D7;
+  --color-grey: #D9D9D9;
+  --color-dark: #210303;
+  --color-red: #FF6060;
+  --color-red-dark: #f83737;
+  --color-red-light: rgb(255, 153, 153)060;
 
   /*
     Brand Colors
@@ -95,10 +80,10 @@
     The colors of "bonsai" as a brand. For use in logos and sections
     where we want to reinforce a sense of who we are.
   */
-  --color-brand: #b87b18;
-  --color-brand-secondary: #317d4f;
-  --color-brand-dark: #204345;
-  --color-brand-light: #e4f3ea;
+  --color-brand: var(--color-red);
+  --color-brand-secondary: var(--color-red-light);
+  --color-brand-dark: var(--color-dark);
+  --color-brand-light: var(--color-white);
 
   /*
     System Colors
@@ -119,7 +104,7 @@
   */
 
   --color-primary: var(--color-brand);
-  --color-primary-dark: #996510;
+  --color-primary-dark: var(--color-red-dark);
   --color-primary-darkest: #8f5900;
   --color-primary-mid: #b87b184f;
   --color-primary-light: #fffaf1;
