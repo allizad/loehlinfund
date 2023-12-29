@@ -49,3 +49,9 @@ progress:indeterminate::-moz-progress-bar {
     background-position: -200% 0;
   }
 }
+
+progress.progress-over {
+  direction: rtl;
+  --progress-bg-color: var(--color-primary);
+  --progress-color: var(--color-red-bright);
+}
